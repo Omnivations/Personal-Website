@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Edward Wilson | Writer, Technologist & Operations Leader</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .accent { color: #2563eb; }
+        .bg-accent { background-color: #2563eb; }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-200 selection:text-blue-900">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="font-bold tracking-tight text-lg text-slate-900">D.E. Wilson</div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html#about" class="font-medium text-slate-600 hover:text-slate-900 transition-colors">About</a>
+                <a href="index.html#portfolio" class="font-medium text-slate-600 hover:text-slate-900 transition-colors">Video</a>
+                <a href="writing.html" class="font-medium text-slate-600 hover:text-slate-900 transition-colors">Writing Portfolio</a>
+                <a href="resume.html" class="font-medium text-slate-600 hover:text-slate-900 transition-colors">Resume</a>
+                <a href="index.html#contact" class="px-5 py-2.5 bg-slate-900 text-white font-semibold rounded-lg hover:bg-blue-600 transition-colors shadow-sm">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-btn" class="text-slate-600 hover:text-slate-900 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-200 shadow-lg absolute w-full">
+            <div class="px-4 pt-2 pb-4 space-y-1">
+                <a href="index.html#about" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50">About</a>
+                <a href="index.html#portfolio" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50">Video</a>
+                <a href="writing.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50">Writing Portfolio</a>
+                <a href="resume.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50">Resume</a>
+                <a href="index.html#contact" class="block px-3 py-2 mt-4 text-center bg-slate-900 text-white font-semibold rounded-lg hover:bg-blue-600 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 md:pt-40 md:pb-28 px-6 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-50 -z-10"></div>
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-blue-100 blur-3xl opacity-50 -z-10"></div>
+        
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-block bg-blue-100 text-blue-800 text-sm font-bold px-4 py-1.5 rounded-full tracking-wide mb-6">OPERATIONS & CREATIVE IP</div>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 leading-tight mb-6">
+                Bridging the gap between <span class="text-blue-600">technology</span> and <span class="text-indigo-600">narrative.</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+                I build scalable operations, lead cross-functional teams, and execute high-impact content strategies for global markets.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 bg-slate-900 text-white font-bold rounded-xl hover:bg-blue-600 hover:shadow-lg hover:-translate-y-0.5 transition-all">
+                    View Portfolio
+                </a>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-white text-slate-900 font-bold rounded-xl border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all">
+                    Get in Touch
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 bg-white border-t border-slate-200">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-sm font-bold tracking-widest uppercase accent mb-3">The Executive Summary</h2>
+                    <h3 class="text-3xl font-bold text-slate-900 mb-6">I scale businesses through systems, teams, and technology.</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">
+                        Over the last decade, I have specialized in taking disorganized startups and office, and then scaling them into multi-million dollar enterprises. I don't just manage people—I build the technical and operational architectures that allow global teams to execute flawlessly.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed mb-8">
+                        By integrating Agentic AI, automating manual workflows, and directing high-yield content pipelines, I recently scaled an offshore BPO operation from $204,000 to $5,000,000 in Annual Recurring Revenue (ARR). My philosophy is simple: <strong>Eliminate bloat. Empower teams. Execute relentlessly.</strong>
+                    </p>
+                    
+                    <div class="bg-slate-100 p-8 rounded-2xl border border-slate-200">
+                        <h4 class="font-bold text-slate-900 mb-4">Core Capabilities</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3 text-slate-700">
+                                <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Multi-National Operations & Leadership</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-slate-700">
+                                <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Technical Project Management & Deployment</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-slate-700">
+                                <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>High-Scale Media Production (Video/Audio)</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-slate-700">
+                                <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>SEO, Content Strategy & Copywriting</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <div class="absolute -inset-2 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl opacity-20 group-hover:opacity-40 blur transition duration-500"></div>
+                    <div class="relative bg-white p-2 rounded-2xl border border-slate-200 shadow-sm overflow-hidden aspect-[4/5] md:aspect-square flex items-center justify-center bg-slate-50">
+                        <img src="headshot.jpg" onerror="this.onerror=null; this.src='headshot.png';" alt="Daniel Edward Wilson" class="w-full h-full object-cover rounded-xl shadow-inner grayscale hover:grayscale-0 transition duration-500">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Portfolio Section -->
+    <section id="portfolio" class="py-20 px-6 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-5xl mx-auto">
+            <div class="mb-12">
+                <h2 class="text-sm font-bold tracking-widest uppercase accent mb-3">Video Production & Directing</h2>
+                <h3 class="text-3xl font-bold text-slate-900">Selected Work</h3>
+                <p class="text-slate-600 mt-4 max-w-2xl">I directed, wrote, and shot these campaigns. A showcase of production management, creative direction, and content strategy execution across international teams.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Video 1 -->
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="aspect-w-16 aspect-h-9 w-full overflow-hidden rounded-lg bg-slate-900 mb-4 relative group cursor-pointer" onclick="openModal('UbKs1XFlYzE')">
+                        <img src="https://img.youtube.com/vi/UbKs1XFlYzE/hqdefault.jpg" alt="Video Thumbnail" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-14 h-14 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition duration-300">
+                                <svg class="w-6 h-6 text-slate-900 ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-slate-900 line-clamp-1">International Brand Launch (Singapore)</h4>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="aspect-w-16 aspect-h-9 w-full overflow-hidden rounded-lg bg-slate-900 mb-4 relative group cursor-pointer" onclick="openModal('Tioieo25Rvw')">
+                        <img src="https://img.youtube.com/vi/Tioieo25Rvw/hqdefault.jpg" alt="Video Thumbnail" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-14 h-14 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition duration-300">
+                                <svg class="w-6 h-6 text-slate-900 ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-slate-900 line-clamp-1">HealthTech Brand Campaign (Singapore)</h4>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="aspect-w-16 aspect-h-9 w-full overflow-hidden rounded-lg bg-slate-900 mb-4 relative group cursor-pointer" onclick="openModal('B5W0GnHLscY')">
+                        <img src="https://img.youtube.com/vi/B5W0GnHLscY/hqdefault.jpg" alt="Video Thumbnail" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-14 h-14 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition duration-300">
+                                <svg class="w-6 h-6 text-slate-900 ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-slate-900 line-clamp-1">Indonesian Health Company Travel Video</h4>
+                </div>
+                
+                <!-- Video 4 (Documentary) -->
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="aspect-w-16 aspect-h-9 w-full overflow-hidden rounded-lg bg-slate-900 mb-4 relative group cursor-pointer" onclick="openModal('ykzNpi2yuGY')">
+                        <img src="https://img.youtube.com/vi/ykzNpi2yuGY/hqdefault.jpg" alt="Video Thumbnail" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-14 h-14 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition duration-300">
+                                <svg class="w-6 h-6 text-slate-900 ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-slate-900 line-clamp-1">Long-Form Storytelling</h4>
+                </div>
+
+                <!-- Video 5 -->
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="aspect-w-16 aspect-h-9 w-full overflow-hidden rounded-lg bg-slate-900 mb-4 relative group cursor-pointer" onclick="openModal('NVNZ7jIh1bg')">
+                        <img src="https://img.youtube.com/vi/NVNZ7jIh1bg/hqdefault.jpg" alt="Video Thumbnail" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-14 h-14 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition duration-300">
+                                <svg class="w-6 h-6 text-slate-900 ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-slate-900 line-clamp-1">Mountain Attraction Drone Review</h4>
+                </div>
+
+                <!-- Video 6 -->
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="aspect-w-16 aspect-h-9 w-full overflow-hidden rounded-lg bg-slate-900 mb-4 relative group cursor-pointer" onclick="openModal('95nmlxID9wg')">
+                        <img src="https://img.youtube.com/vi/95nmlxID9wg/hqdefault.jpg" alt="Video Thumbnail" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-14 h-14 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition duration-300">
+                                <svg class="w-6 h-6 text-slate-900 ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-slate-900 line-clamp-1">Local Nightlife Review</h4>
+                </div>
+                
+                <!-- Video 7 -->
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="aspect-w-16 aspect-h-9 w-full overflow-hidden rounded-lg bg-slate-900 mb-4 relative group cursor-pointer" onclick="openModal('XNK8ZWuEsVk')">
+                        <img src="https://img.youtube.com/vi/XNK8ZWuEsVk/hqdefault.jpg" alt="Video Thumbnail" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-14 h-14 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition duration-300">
+                                <svg class="w-6 h-6 text-slate-900 ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-slate-900 line-clamp-1">Product Feature Highlight</h4>
+                </div>
+                
+                <!-- Video 8 -->
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="aspect-w-16 aspect-h-9 w-full overflow-hidden rounded-lg bg-slate-900 mb-4 relative group cursor-pointer" onclick="openModal('J9rywq4f0dc')">
+                        <img src="https://img.youtube.com/vi/J9rywq4f0dc/hqdefault.jpg" alt="Video Thumbnail" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-14 h-14 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition duration-300">
+                                <svg class="w-6 h-6 text-slate-900 ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-slate-900 line-clamp-1">Historical Restaurant Walkthrough</h4>
+                </div>
+                
+                <!-- Video 9 -->
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="aspect-w-16 aspect-h-9 w-full overflow-hidden rounded-lg bg-slate-900 mb-4 relative group cursor-pointer" onclick="openModal('CpSDxp6KblQ')">
+                        <img src="https://img.youtube.com/vi/CpSDxp6KblQ/hqdefault.jpg" alt="Video Thumbnail" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-14 h-14 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition duration-300">
+                                <svg class="w-6 h-6 text-slate-900 ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-slate-900 line-clamp-1">Restaurant Review And Presentation</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Written Content Section -->
+    <section id="writing" class="py-20 px-6 bg-white border-t border-slate-200">
+        <div class="max-w-5xl mx-auto">
+            <div class="mb-12">
+                <h2 class="text-sm font-bold tracking-widest uppercase accent mb-3">Written Content & Copy</h2>
+                <h3 class="text-3xl font-bold text-slate-900">Selected Publications</h3>
+                <p class="text-slate-600 mt-4 max-w-2xl">A curated collection of my published articles, essays, and technical writing. This highlights my ability to command narrative, simplify complex topics, and drive engagement through written media.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Article Card 1 -->
+                <a href="javascript:void(0)" onclick="openPdfModal('https://clippingsme-assets-1.s3.amazonaws.com/cuttingpdfs/1575062/63d3713e0114ea9d9c7e043c28cbae0f.pdf?')" class="block bg-slate-50 rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 group">
+                    <div class="h-48 bg-slate-800 overflow-hidden relative flex items-center justify-center">
+                        <img src="https://clippingsme-assets-1.s3.amazonaws.com/backgrounds/1575062/open-uri20220925-18872-1uiihqh" alt="Article Thumbnail" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1455390582262-044cdead2708?q=80&w=600&auto=format&fit=crop';">
+                        <div class="absolute inset-0 bg-slate-900/60 opacity-80 group-hover:opacity-40 transition-opacity duration-300 z-10"></div>
+                        <svg class="w-12 h-12 text-white/80 relative z-20 group-hover:text-white transition-colors duration-300 drop-shadow-md" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col h-full">
+                        <div class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2">Featured Essay</div>
+                        <h4 class="font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors line-clamp-2">Froothie Demo</h4>
+                        <p class="text-sm text-slate-600 line-clamp-3">Description for a blender product.</p>
+                    </div>
+                </a>
+                <!-- Article Card 2 -->
+                <a href="javascript:void(0)" onclick="openPdfModal('https://clippingsme-assets-1.s3.amazonaws.com/cuttingpdfs/1575058/7b7a95ed25e92ce0da613b3737142dc9.pdf?')" class="block bg-slate-50 rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 group">
+                    <div class="h-48 bg-slate-800 overflow-hidden relative flex items-center justify-center">
+                        <img src="https://clippingsme-assets-1.s3.amazonaws.com/backgrounds/1575058/AdobeStock_207629012-1024x683.jpg" alt="Article Thumbnail" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1455390582262-044cdead2708?q=80&w=600&auto=format&fit=crop';">
+                        <div class="absolute inset-0 bg-slate-900/60 opacity-80 group-hover:opacity-40 transition-opacity duration-300 z-10"></div>
+                        <svg class="w-12 h-12 text-white/80 relative z-20 group-hover:text-white transition-colors duration-300 drop-shadow-md" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col h-full">
+                        <div class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2">Industry Insight</div>
+                        <h4 class="font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors line-clamp-2">U.S. Land of the Unique Road Trip</h4>
+                        <p class="text-sm text-slate-600 line-clamp-3">Blog article covering U.S. travel experiences.</p>
+                    </div>
+                </a>
+                <!-- Article Card 3 -->
+                <a href="javascript:void(0)" onclick="openPdfModal('https://clippingsme-assets-1.s3.amazonaws.com/cuttingpdfs/1568069/350c4307464ef3c053c1c63182805174.pdf?')" class="block bg-slate-50 rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 group">
+                    <div class="h-48 bg-slate-800 overflow-hidden relative flex items-center justify-center">
+                        <img src="https://clippingsme-assets-1.s3.amazonaws.com/backgrounds/1568069/open-uri20220910-32028-1x9kq8z" alt="Article Thumbnail" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1455390582262-044cdead2708?q=80&w=600&auto=format&fit=crop';">
+                        <div class="absolute inset-0 bg-slate-900/60 opacity-80 group-hover:opacity-40 transition-opacity duration-300 z-10"></div>
+                        <svg class="w-12 h-12 text-white/80 relative z-20 group-hover:text-white transition-colors duration-300 drop-shadow-md" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col h-full">
+                        <div class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2">Technical Guide</div>
+                        <h4 class="font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors line-clamp-2">Mattress Topper</h4>
+                        <p class="text-sm text-slate-600 line-clamp-3">Website copy for mattress product.</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="mt-10 text-center">
+                <a href="writing.html" class="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white font-bold rounded-lg hover:bg-blue-600 transition-colors">
+                    View Full Writing Portfolio
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-slate-900 text-white border-t border-slate-800">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-sm font-bold tracking-widest uppercase text-blue-400 mb-3">Get In Touch</h2>
+            <h3 class="text-3xl md:text-4xl font-bold mb-6">Ready to scale your operations?</h3>
+            <p class="text-slate-400 mb-10 leading-relaxed">Whether you need an IT Director to optimize your tech stack or a Content Manager to oversee global creative production, I have the execution track record to deliver.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button onclick="navigator.clipboard.writeText('daniel@asaastance.com'); const original = this.innerHTML; this.innerHTML = '✓ Copied to Clipboard!'; setTimeout(() => { this.innerHTML = original; }, 3000);" class="px-8 py-4 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-500 transition-colors shadow-lg">
+                    Email Me
+                </button>
+                <a href="https://www.linkedin.com/in/daniel-wilson-834326203/" target="_blank" class="px-8 py-4 bg-slate-800 text-white font-bold rounded-xl border border-slate-700 hover:bg-slate-700 hover:border-slate-600 transition-colors">
+                    Connect on LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 bg-slate-950 text-slate-500 text-center border-t border-slate-900">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="font-bold text-slate-400 tracking-tight text-lg">D.E. Wilson</div>
+            <p>&copy; 2026 Daniel Edward Wilson. All rights reserved.</p>
+        
+            <div class="mt-4 md:mt-0"><a href="https://www.upwork.com/freelancers/~01732b266922aa56b5" target="_blank" class="hover:text-blue-400 transition-colors inline-flex items-center gap-2"><i class="fas fa-briefcase"></i> Upwork Profile</a></div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="fixed inset-0 z-[100] hidden bg-slate-900/95 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6 opacity-0 transition-opacity duration-300">
+        <div class="relative w-full max-w-5xl mx-auto bg-black rounded-2xl overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300" id="modalContent">
+            <!-- Close Button -->
+            <button onclick="closeModal()" class="absolute -top-12 right-0 text-white hover:text-slate-300 transition-colors flex items-center gap-2 font-medium">
+                <span>Close</span>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            
+            <!-- Video Container -->
+            <div class="aspect-w-16 aspect-h-9 w-full" id="modalVideoContainer">
+                <iframe id="modalIframe" class="w-full h-full min-h-[300px] sm:min-h-[500px] md:min-h-[600px]" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script for Modal Logic -->
+    <script>
+        const modal = document.getElementById('videoModal');
+        const modalContent = document.getElementById('modalContent');
+        const iframe = document.getElementById('modalIframe');
+
+        function openModal(videoId) {
+            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modalContent.classList.remove('scale-95');
+            }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            modalContent.classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                iframe.src = ''; 
+                document.body.style.overflow = 'auto'; 
+            }, 300);
+        }
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                closeModal();
+            }
+        });
+    </script>
+
+    <!-- PDF Modal -->
+    <div id="pdfModal" class="fixed inset-0 z-[100] hidden bg-slate-900/95 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6 opacity-0 transition-opacity duration-300">
+        <!-- Close Button (Moved outside the white box for easier clicking) -->
+        <button onclick="closePdfModal()" class="absolute top-4 right-4 md:top-8 md:right-8 text-white hover:text-slate-300 transition-colors flex items-center gap-2 font-medium z-[110]">
+            <span>Close</span>
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        
+        <div class="relative w-full max-w-5xl h-[85vh] mx-auto bg-slate-100 rounded-2xl overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300 flex flex-col" id="pdfModalContent">
+            <!-- Loading Spinner -->
+            <div class="absolute inset-0 flex items-center justify-center bg-slate-100" id="pdfSpinner">
+                <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+            </div>
+            
+            <!-- Document Iframe -->
+            <!-- Using Google Docs Viewer as a fallback/wrapper to ensure PDFs render beautifully on all devices, especially mobile -->
+            <iframe id="pdfIframe" class="w-full h-full relative z-10" src="" frameborder="0" onload="document.getElementById('pdfSpinner').style.display='none'"></iframe>
+        </div>
+    </div>
+
+    <!-- Script for PDF Modal -->
+    <script>
+        const pdfModal = document.getElementById('pdfModal');
+        const pdfModalContent = document.getElementById('pdfModalContent');
+        const pdfIframe = document.getElementById('pdfIframe');
+        const pdfSpinner = document.getElementById('pdfSpinner');
+
+        function openPdfModal(url) {
+            pdfSpinner.style.display = 'flex';
+            // We route the PDF through Google's document viewer so it embeds perfectly and handles the AWS links without downloading them
+            pdfIframe.src = 'https://docs.google.com/viewer?url=' + encodeURIComponent(url) + '&embedded=true';
+            
+            pdfModal.classList.remove('hidden');
+            setTimeout(() => {
+                pdfModal.classList.remove('opacity-0');
+                pdfModalContent.classList.remove('scale-95');
+            }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePdfModal() {
+            pdfModal.classList.add('opacity-0');
+            pdfModalContent.classList.add('scale-95');
+            setTimeout(() => {
+                pdfModal.classList.add('hidden');
+                pdfIframe.src = ''; 
+                document.body.style.overflow = 'auto'; 
+            }, 300);
+        }
+
+        pdfModal.addEventListener('click', (e) => {
+            if (e.target === pdfModal) {
+                closePdfModal();
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !pdfModal.classList.contains('hidden')) {
+                closePdfModal();
+            }
+        });
+    </script>
+
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            if(btn && menu) {
+                btn.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
